@@ -15,10 +15,8 @@ int main()
 	{
 		if (i % 3 == 0)	// Checks if the number is a multiple of 3
 			eulerSolution = eulerSolution + i;	// Add number to variable
-		if (i % 5 == 0)	// Checks if the number is a multiple of 5
+		else if (i % 5 == 0)	// Checks if the number is a multiple of 5
 			eulerSolution = eulerSolution + i;	// Add number to variable
-		if (i % 3 == 0 && i % 5 == 0)	// Removes duplicates; the numbers which are both multiples of 3 and 5 will be added twice
-			eulerSolution = eulerSolution - i;	// Add number to variable
 	}
 
 	// Display results and exit
